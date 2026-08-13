@@ -170,7 +170,13 @@ section{padding:clamp(var(--sp-16),9vw,var(--sp-24)) 0;}
 .case-top .tag{display:inline-block;font-size:var(--text-sm);font-weight:var(--fw-semibold);color:var(--color-brand);background:var(--color-brand-soft);border:1px solid var(--brand-200);padding:2px var(--sp-3);border-radius:var(--radius-full);margin-bottom:var(--sp-3);}
 .case-top h3{font-size:var(--text-2xl);font-weight:var(--fw-bold);letter-spacing:-.015em;}
 .case-top .meta{font-size:var(--text-sm);color:var(--color-text-sub);text-align:right;white-space:nowrap;}
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);margin-bottom:var(--sp-6);}
+.wins{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-bottom:var(--sp-6);}
+.win{background:var(--color-success-soft);border-radius:var(--radius-md);padding:var(--sp-3) var(--sp-5);display:flex;flex-direction:column;justify-content:center;}
+.win .v{font-size:var(--text-2xl);font-weight:var(--fw-bold);color:var(--color-success);letter-spacing:-.02em;line-height:1.05;font-variant-numeric:tabular-nums;}
+.win .l{font-size:var(--text-xs);color:var(--color-text-sub);margin-top:3px;}
+.win.stmt{background:var(--color-brand-soft);border:1px solid var(--brand-200);}
+.win.stmt .t{font-size:var(--text-base);font-weight:var(--fw-semibold);color:var(--color-text);}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-6);margin-bottom:var(--sp-6);}
 @media(max-width:720px){.case-grid{grid-template-columns:1fr;gap:var(--sp-5);}}
 .case-block h5{font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:var(--sp-3);}
 .case-block ul{list-style:none;display:flex;flex-direction:column;gap:var(--sp-2);}
@@ -360,33 +366,44 @@ footer{padding:var(--sp-10) 0;border-top:1px solid var(--color-border);font-size
 
       <article class="case reveal">
         <div class="case-top"><div><span class="tag">AI Infrastructure · 현재</span><h3>멀티테넌트 학습 · GPU 관리 솔루션</h3></div><div class="meta">2025 – 현재<br>PO · 기여 100%</div></div>
+        <div class="wins">
+          <span class="win stmt"><span class="t">멀티테넌트 운영 체계 · RBAC 정책 신규 정립</span></span>
+          <span class="win stmt"><span class="t">지속 운영 가능한 구조로 안착 (진행 중)</span></span>
+        </div>
         <div class="case-grid">
           <div class="case-block"><h5>배경 (문제)</h5><ul><li>고가의 GPU 장비를 여러 조직이 효율적으로 나눠 쓰고 관리하려는 니즈가 커짐</li><li>자원 활용 불균형 · 운영 복잡도 증가, 권한 · 비용 통제 어려움</li></ul></div>
           <div class="case-block"><h5>목표</h5><ul><li>학습 · GPU 자원 운영 최적화</li><li>확장 가능한 멀티테넌트 관리 체계 신규 구축</li></ul></div>
           <div class="case-block"><h5>한 일</h5><ul><li>운영 정책 · 리소스 관리 구조 정의, 계정 · 권한(RBAC) 체계 설계</li><li>신규 기획 후 PO로서 고도화 · 운영을 직접 리드</li><li>Spec-kit을 활용해 개발과 빠르게 스펙을 맞춰 작업 진행</li></ul></div>
-          <div class="case-block"><h5>결과</h5><ul><li>멀티테넌트 운영 체계 · 권한 정책 정립</li><li>학습 · 자원 운영을 <b>지속 운영 가능한 구조</b>로 안착(진행 중)</li></ul></div>
         </div>
         <p class="case-insight">AI 인프라에서는 기술보다 "운영 가능한 구조"와 "지속 가능한 확장성"이 더 중요하다는 점을 경험하고 있습니다.</p>
       </article>
 
       <article class="case reveal">
         <div class="case-top"><div><span class="tag">Messaging · Service Owner</span><h3>메시징 솔루션 개편 및 운영</h3></div><div class="meta">2018 – 2022<br>Service Owner · 기여 100%</div></div>
+        <div class="wins">
+          <span class="win"><span class="v">▼60%</span><span class="l">VOC</span></span>
+          <span class="win"><span class="v">▲3배</span><span class="l">신규 고객</span></span>
+          <span class="win"><span class="v">160%</span><span class="l">매출 목표 초과</span></span>
+          <span class="win stmt"><span class="t">인입 고객 이탈률 감소</span></span>
+        </div>
         <div class="case-grid">
           <div class="case-block"><h5>배경 (문제)</h5><ul><li>올드한 UI/UX로 사용자 사용성이 저하됨</li><li>서비스 확장성 부족</li></ul></div>
           <div class="case-block"><h5>목표</h5><ul><li>서비스 활성화와 매출 증대</li><li>운영 안정성 확보</li></ul></div>
           <div class="case-block"><h5>한 일</h5><ul><li>솔루션 UI/UX 개선 및 서비스 구조 계층화</li><li>스팸 방어 · 대응 체계 구축, 백오피스 설계</li><li>시장 분석 기반 상품 · 프로모션 전략 수립</li></ul></div>
-          <div class="case-block"><h5>결과</h5><ul><li><b>VOC ▼60%</b> · <b>신규 고객 ▲3배</b></li><li><b>매출 목표 160% 초과</b> · 인입 고객 이탈률 감소</li></ul></div>
         </div>
         <p class="case-insight">서비스 성장과 운영 안정성은 동시에 설계되어야 한다는 점을 경험했습니다.</p>
       </article>
 
       <article class="case reveal">
         <div class="case-top"><div><span class="tag">Platform · IA</span><h3>호스팅 통합 관리 콘솔</h3></div><div class="meta">2018 – 2019<br>PM · 기여 50%</div></div>
+        <div class="wins">
+          <span class="win"><span class="v">13→1</span><span class="l">서비스 통합 콘솔</span></span>
+          <span class="win stmt"><span class="t">관리 포인트 축소 · 탐색 효율 향상</span></span>
+        </div>
         <div class="case-grid">
           <div class="case-block"><h5>배경 (문제)</h5><ul><li>13개 서비스가 각각 분산 관리되어 관리 포인트 과다</li><li>사용자의 서비스 탐색 · 과업 수행 비효율</li></ul></div>
           <div class="case-block"><h5>목표</h5><ul><li>13개 서비스를 하나로 묶는 통합 관리 구조 구축</li><li>확장 가능한 정보구조(IA) 확보</li></ul></div>
           <div class="case-block"><h5>한 일</h5><ul><li>공통 IA · 확장 가능한 메뉴 구조 설계, 대표 UI 가이드 제작</li><li>관리 콘솔 화면설계 · 튜토리얼 기획</li></ul></div>
-          <div class="case-block"><h5>결과</h5><ul><li>서비스 관리 포인트 축소, 탐색 효율 향상</li><li>확장성 확보 · 시장 트렌드 반영</li></ul></div>
         </div>
         <p class="case-insight">플랫폼은 기능보다 "구조"가 중요하며, 좋은 구조가 운영 효율과 고객 경험을 동시에 만든다는 점을 경험했습니다.</p>
       </article>
